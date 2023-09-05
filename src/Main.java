@@ -45,7 +45,7 @@ public class Main {
         }
 
 
-        int deliveryDistance = 95;
+        int deliveryDistance = 50;
         int deliveryDays = 1;
         if (deliveryDistance < 20) {
             System.out.println("Потребуется дней: " + deliveryDays);
@@ -55,7 +55,8 @@ public class Main {
         }
         if ((deliveryDistance >= 60) && (deliveryDistance < 100)) {
             System.out.println("Потребуется дней: " + (deliveryDays + deliveryDays + deliveryDays));
-        } else {
+        }
+        if (deliveryDistance >= 100) {
             System.out.println("Свыше 100 км доставки нет");
         }
 
